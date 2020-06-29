@@ -1,0 +1,31 @@
+  
+body{
+    background-color: #222222;
+    text-align: center;
+    color: #ffffff;
+  }
+
+#canvas{
+  background-color: black;
+}
+
+#title{
+  color: #dd0000;
+  font-size: 80px;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+

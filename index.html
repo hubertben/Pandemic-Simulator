@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pandemic Simulator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="setup()">
+    
+    
+    <h1 id="title">Pandemic Simulator</h1>
+
+    <p style="margin-bottom: 0px" id="soc"> Slide To Adjust Social Distancing : None</p>
+    <input id="social_distancing" min="1" max="5" value="1" type="range">
+
+    <p style="margin-bottom: 0px" id="mas"> Slide To Adjust Mask Usage : None</p>
+    <input id="mask_usage" min="0" max="4" value="0" type="range">
+
+    <p style="margin-bottom: 0px" id="han"> Slide To Adjust Hand Washing : None</p>
+    <input id="hand_washing" min="0" max="4" value="0" type="range">
+
+    <p style="margin-bottom: 0px" id="time"> Set Time Interval : 1 Day</p>
+    <input id="time_interval" min="1" max="50" value="1" type="range">
+    <br>
+    <br>
+
+    <button onclick="start()" style="margin-bottom: 15px"><b>Start Simulation</b></button>
+    <div id="cv">
+      <canvas id="canvas" width="1250" height="750" style="border:2px solid"></canvas>
+    </div>
+    <script src="script.js"></script>
+
+    <h1>Previous Runs</h1>
+    <table id="log_list">
+
+      <tr>
+        <th>Days Elapsed</th>
+        <th>Remaining Population</th>
+        <th>Total Infections</th>
+        <th>Social Distancing</th>
+        <th>Mask Usage</th>
+        <th>Hand Washing</th>
+      </tr>
+
+    </table>
+    
+    <br>
+    <br>
+    <br>
+    
+    <h1>What is this?</h1>
+    <p>Over the past few months, the planet has been under the harsh outbreak of the COVID-19 Virus. This simulation was built in order to demonstrate the importance of Social Distancing, Wearing a Mask, and Washing your Hands.</p>
+    <p>Statistics from the simulation will be provided at the end of the simulation. Enjoy :)</p>
+    
+    <br>
+    <br>
+
+    <h2>Simulation Adjustment Controls</h2>
+    
+    <h3>Social Distancing</h3>
+    <p>Adjusting the Social Distancing slider will allow for simulated humans to stay further apart from one another</p>
+
+    <h3>Mask Usage</h3>
+    <p>Adjusting the Mask Usage slider will prepare simulated humans with a mask at the start of the simulation casuing less of a spread</p>
+
+    <h3>Hand Washing</h3>
+    <p>Adjusting the Hand Washing slider will allow simulated humans to wash their hands after an interaction with another simulated human</p>
+    
+    <br>
+    <br>
+    <br>
+    <p>Built by Ben Hubert</p>
+    
+  </body>
+</html>
